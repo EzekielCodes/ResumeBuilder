@@ -28,7 +28,7 @@ const AccordionTrigger = React.forwardRef(
         <AccordionPrimitive.Trigger
           ref={ref}
           className={cn(
-            "flex flex-1 items-center justify-between py-4 font-medium transition-all",
+            "flex flex-2 items-center justify-between py-4 font-medium transition-all",
             className,
             {
               "bg-[var(--Neutral-100, #FFF)] ": isOpen,
@@ -39,7 +39,7 @@ const AccordionTrigger = React.forwardRef(
         >
           {children}
           {noExtaStyle ? (
-            <ChevronDownIcon className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" />
+            <ChevronDownIcon className="h-5 w-5 shrink-0 text-muted-foreground transition-transform duration-200" />
           ) : (
             <span
               className={`shrink-0 transition-transform duration-200 ${
